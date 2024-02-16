@@ -85,7 +85,7 @@ temp_amb=np.array([20])
 temp_cell=temp_amb+(41-20)/800*irrad
 
 # 2nd step: Apply model to estimate the 5 parameters of the single diode equation using the CEC model
-diode_paramsTQP = pvlib.pvsystem.calcparams_cec(irrad, temp_cell, module_dataTQPeakDuo400['alpha_sc'], cec_fit_paramsTQP[4], 
+diode_paramsTQP = pvlib.pvsystem.calcparams_cec(irrad, temp_cell, module_dataTQPeakDuo385['alpha_sc'], cec_fit_paramsTQP[4], 
                                             cec_fit_paramsTQP[0], cec_fit_paramsTQP[1], cec_fit_paramsTQP[3], 
                                             cec_fit_paramsTQP[2], cec_fit_paramsTQP[5])
 
